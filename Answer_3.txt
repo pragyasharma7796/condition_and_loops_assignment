@@ -1,0 +1,48 @@
+Loop : Loops are used in programming to repeatedly run a block of code.
+
+different type of loop in javascript:
+1. for  Loop: We use for loop to run a piece of code until the set condition turns false.
+
+Syntax : 
+for(initial expression; condition ; update expression){
+    //for loop body
+}
+
+Example":
+for(let i=1;i<5;i++){
+    console.log(i)
+}
+//output
+/* 1
+2
+3
+4*/
+
+2. While loop: This loop keeps on running as long as the condition is true.
+
+Syntax:
+while(condition){
+    //body of the loop
+}
+Example:
+let i=0; n=5;
+while(i<n){
+    console.log(i);
+    i++
+}
+
+3. do while loop: this loop similar to while loop but one differnce on it that first iteration 
+run always and later iteration run after codition evaluates to true.
+
+Syntax:
+do{
+    //  body of the loop
+}while(condition);
+
+Example:
+let i=n;
+do{
+    console.log(i);
+    i--;
+}while(i<n && i>0)
+

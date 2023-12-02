@@ -1,0 +1,128 @@
+Condition Statement :
+ Conditional statements help you to make a decision based on certain conditions.
+ These conditions are specified by a set of conditional statements having boolean expressions which are evaluated to a boolean value of true or false.
+
+ There are three type of conditional statement in javaScript:
+ 
+1. If statement
+2. If-Else statement
+3. Nested If-else statement
+4.If-Else If ladder
+
+1. If statement : The single if statement  is used to execute the code if a condition is true. 
+It is also called a one-way selection statement. When we use the if condition,
+ we pass the argument and if the argument will be satisfied then the respective code
+  will be executed otherwise nothing can happen.
+
+Syntax
+if(expression)
+{
+ //code to be executed
+}
+example:W.A.Pcheck given number is even
+let num=4;
+if(num%2==0){
+    console.log(""num is even")
+}
+
+2.If-else statement
+The if-else statement is used to execute the code if the condition is true or false.
+ It is also called a two-way selection statement.
+
+The single if statement may work pretty well, but if you want to work with 
+multiple variables or the extended conditional parameters, then the if-else
+ statement is the optimum choice. By using the if statement, only one block 
+ of the code executes after the condition is true but by using the if-else statement,
+  there are two possible blocks of code where the first block is used for handling the success
+   part and the other one for the failure condition.
+
+Syntax
+if(expression)
+{
+ //Statements
+}
+else
+{
+ //Statements
+}
+
+Example:
+
+example:W.A.Pcheck given number is even or odd
+let num=4;
+if(num%2==0){
+    console.log(""num is even")
+}else{
+    console.log(""num is odd")
+}
+
+3.Nested If-else statement
+The nested if...else statement is used when a program requires more than one test expression.
+ It is also called a multi-way selection statement. When a series of the decision are involved
+  in a statement, we use the if-else statement in nested form.
+
+Nested if-else statements can be useful when we can have multiple sources of expression and 
+the values and based on the specific value, we need to check nested conditions.
+
+Its recommended for the best practice to avoid using nested if-else statement as it may
+
+ turn into a conditional bubbling situation, better to use if-else-if or the switch case for the
+  better conditional handling.
+
+Syntax
+if( expression )
+{ 
+ if( expression1 )
+ {
+ statement-block1;
+ }
+ else 
+ {
+ statement-block 2;
+ }
+}
+else
+{
+ statement-block 3;
+}
+
+4. If..else If ladder
+The if-else-if statement is used to execute one code from multiple conditions. It is also called a multipath decision statement. It is a chain of if..else statements in which each if statement is associated with an else if statement and the last would be an else statement.
+
+Syntax
+if(condition1)
+{
+ //statements
+} 
+else if(condition2)
+{
+ //statements
+}
+else if(condition3)
+{
+ //statements
+}
+else
+{
+ //statements
+}
+
+Example:
+let a=50;
+
+if( a%5==0 && a%8==0)
+ {
+ console.log("divisible by both 5 and 8");
+ } 
+ else if( a%8==0 )
+ {
+ console.log("divisible by 8");
+ }
+ else if(a%5==0)
+ {
+ console.log("divisible by 5");
+ }
+ else 
+ {
+ console.log("divisible by none");
+ }
